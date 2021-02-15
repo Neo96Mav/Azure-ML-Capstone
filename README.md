@@ -85,7 +85,7 @@ As we can see, the endpoint is deployed correctly and is active. The scoring fil
 
 ![Query1](https://github.com/Neo96Mav/Azure-ML-Capstone/blob/main/Screenshots/endpoint-query-data.png)
   
-![Query2](https://github.com/Neo96Mav/Azure-ML-Capstone/blob/main/Screenshots/endpoint-query-results.png)
+![Query2](https://github.com/Neo96Mav/Azure-ML-Capstone/blob/main/Screenshots/endpoint-query-result.png)
   
 The queried endpoint returns an output which means our code is working correctly. It can also be checked in the logs, which I also print. To finish the project, I delete the service. 
  
