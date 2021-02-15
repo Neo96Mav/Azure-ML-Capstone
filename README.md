@@ -98,5 +98,9 @@ The queried endpoint returns an output which means our code is working correctly
 ## Future Improvements 
 The project can be improved in the future by tring more things - 
 a) More Sophisticated Modelling Techniques to predict default behaviour 
+
 b) Better pre-processing of data 
+
 c) More time for AutoML run
+
+d) Improving Logging and Usage Statistics at Endpoint
