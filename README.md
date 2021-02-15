@@ -90,10 +90,7 @@ As we can see, the endpoint is deployed correctly and is active. The scoring fil
 The queried endpoint returns an output which means our code is working correctly. It can also be checked in the logs, which I also print. To finish the project, I delete the service. 
  
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
-- A working model
-- Demo of the deployed  model
-- Demo of a sample request sent to the endpoint and its response
+The screencast where I explain my complete project is here: https://youtu.be/PO-fZEwOArA
 
 ## Future Improvements 
 The project can be improved in the future by tring more things - 
