@@ -27,8 +27,14 @@ X18-X23: Amount of previous payment (NT dollar). X18 = amount paid in September,
 The task of this project is to use Machine Learning in the Risk Management domain. To solve the classification problem, various techniques can be used such as RandomForest, LogisticRegression, XGBoost etc.
 
 ### Access
-The dataset can be accessed using the Datasets tab in the AzureML Studio
+I downloaded the csv file, and created a dataset. The dataset can be accessed using the Datasets tab in the AzureML Studio
 ![Dataset](https://github.com/Neo96Mav/Azure-ML-Capstone/blob/main/Screenshots/dataset.png)
+
+In the script, I access the dataset, pre-process data (one-hot encoding for some columns) and then save the processed dataset in the Datastore. 
+![Dataset-process](https://github.com/Neo96Mav/Azure-ML-Capstone/blob/main/Screenshots/dataset_access.png)
+
+Then, I can just access the cleaned dataset and create a Dataset object out of it. 
+![Dataset-clean](https://github.com/Neo96Mav/Azure-ML-Capstone/blob/main/Screenshots/cleaned_dataset_access.png)
 
 ## Automated ML
 To use the AzureML AutoML feature, I decide to run it for 20 minutes, since the dataset is small and a model trains quite quickly. Since I am not using a validation dataset, it is important to use n-fold validation for which I choose n=4. I also use the compute cluster that I initialize, and use Accuracy as the primary metric. We also need to tell it about which column to use as Y. After submitting an AutoML run, I use the RunDetails widget to track the progress. 
@@ -42,6 +48,9 @@ To use the AzureML AutoML feature, I decide to run it for 20 minutes, since the 
 After letting the AutoML run, we see a variety of different algorithms that it has chosen. The best model chosen is the Voting Ensemble Method, which uses a bunch of other models and cleverly uses their predictions to create a final prediction. I could have improved AutoML by letting it run for more time since that would have given it more opportunity to try new models. Another way of improvement is to use a different Primary Metric such as AUC or F1-Score.
 
 ![BestModel](https://github.com/Neo96Mav/Azure-ML-Capstone/blob/main/Screenshots/autoML-best-model.png)
+
+The best model has run id - 
+![BestModel_ID](https://github.com/Neo96Mav/Azure-ML-Capstone/blob/main/Screenshots/aml_best_run_properties.png)
 
 The best model has the following metrics and parameters - 
 
