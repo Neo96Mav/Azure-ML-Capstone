@@ -31,10 +31,10 @@ I downloaded the csv file, and created a dataset. The dataset can be accessed us
 ![Dataset](https://github.com/Neo96Mav/Azure-ML-Capstone/blob/main/Screenshots/dataset.png)
 
 In the script, I access the dataset, pre-process data (one-hot encoding for some columns) and then save the processed dataset in the Datastore. 
-![Dataset-process](https://github.com/Neo96Mav/Azure-ML-Capstone/blob/main/Screenshots/dataset_access.png)
+![Dataset-process](https://github.com/Neo96Mav/Azure-ML-Capstone/blob/main/Screenshots/dataset_access.PNG)
 
 Then, I can just access the cleaned dataset and create a Dataset object out of it. 
-![Dataset-clean](https://github.com/Neo96Mav/Azure-ML-Capstone/blob/main/Screenshots/cleaned_dataset_access.png)
+![Dataset-clean](https://github.com/Neo96Mav/Azure-ML-Capstone/blob/main/Screenshots/clean_dataset_access.PNG)
 
 ## Automated ML
 To use the AzureML AutoML feature, I decide to run it for 20 minutes, since the dataset is small and a model trains quite quickly. Since I am not using a validation dataset, it is important to use n-fold validation for which I choose n=4. I also use the compute cluster that I initialize, and use Accuracy as the primary metric. We also need to tell it about which column to use as Y. After submitting an AutoML run, I use the RunDetails widget to track the progress. 
@@ -50,7 +50,7 @@ After letting the AutoML run, we see a variety of different algorithms that it h
 ![BestModel](https://github.com/Neo96Mav/Azure-ML-Capstone/blob/main/Screenshots/autoML-best-model.png)
 
 The best model has run id - 
-![BestModel_ID](https://github.com/Neo96Mav/Azure-ML-Capstone/blob/main/Screenshots/aml_best_run_properties.png)
+![BestModel_ID](https://github.com/Neo96Mav/Azure-ML-Capstone/blob/main/Screenshots/aml_best_run_properties.PNG)
 
 The best model has the following metrics and parameters - 
 
